@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Plain JavaScript Gallery</title>
+    <meta name="description" content="Plain JavaScript Gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <h3>Choose file(s)</h3>
+    <p><input id="files-upload" type="file" multiple></p>
+
+    <p id="drop-area">
+      <span class="drop-instructions">or drag and drop files here</span>
+      <span class="drop-over">Drop files here!</span>
+    </p>
+    
+    <ul id="file-list">
+      <li class="no-items">(no files uploaded yet)</li>
+    </ul>
+
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
