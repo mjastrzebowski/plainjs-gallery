@@ -50,7 +50,6 @@ var Gallery = function () {
             link.appendChild(fileThumb);
             link.href = evt.target.result;
             link.target = '_blank';
-            li.appendChild(link);
           };
         }(img));
         reader.readAsDataURL(file);
@@ -61,7 +60,9 @@ var Gallery = function () {
         size: parseInt(file.size / 1024, 10),
         type: file.type
       });
-      li.appendChild(fileDesc);
+      link.appendChild(fileDesc);
+
+      li.appendChild(link);
 
       this.fileList.appendChild(li);
     },
